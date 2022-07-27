@@ -1,0 +1,78 @@
+/*
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+optional for tailwindcss
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    background-color: rgb(71, 71, 71);
+    font-family: 'Lato', sans-serif;
+}
+
+.letter{
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+@keyframes blinking {
+    from {text-decoration: underline;
+        text-decoration-color: white;}
+    to {
+        text-decoration: none;
+    }
+}
+
+.letter-active{
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    animation-iteration-count: infinite;
+    animation-name: blinking;
+    animation-duration: 0.75s;
+
+}
+
+
+
+.letter-incorrect{
+    color: red;
+}
+
+.letter-correct{
+    color:white
+}
+
+.word{
+    font-size: 60px;
+    display: flex;
+    width: fit-content;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: rgb(154, 154, 154);
+    padding-inline: 10px;
+    padding-block: 3px;
+    border-radius: 5px;
+}
+
+.word-active{
+    background-color: rgb(18, 18, 18);
+}
+
+
+
+#wordsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    margin-inline: 3rem;
+    justify-content: center;
+}
+
+#info{
+    color: white;
+    font-size: 30px;
+}
+

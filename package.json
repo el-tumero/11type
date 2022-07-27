@@ -1,0 +1,16 @@
+{
+  "name": "11type",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "pck",
+    "build": "pck build"
+  },
+  "dependencies": {
+    "nicepck": "^1.1.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "htmlTemplate": "pug",
+  "entries": [
+    "./src/index.ts"
+  ]
+}
