@@ -1,11 +1,14 @@
 {
   "name": "11type",
+  "homepage": "https://el-tumero.github.io/11type/",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "dev": "pck",
-    "build": "pck build"
+    "build": "pck build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "nicepck": "^1.1.4"
